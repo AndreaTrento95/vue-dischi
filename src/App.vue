@@ -5,7 +5,7 @@
       <div class="wrap-search">
         
           <Search 
-         
+            @searchGenre='searching(disc.genre)'
           />
         
       </div>
@@ -44,6 +44,11 @@ export default {
       discs: [],
 
     }
+  },
+  methods:{
+      searching(genre){
+        console.log(genre);
+      },
   },
   created(){
     axios.get('https://flynn.boolean.careers/exercises/api/array/music')
