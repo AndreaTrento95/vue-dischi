@@ -40,6 +40,7 @@ export default {
         }
         p{
             color: rgb(119, 120, 121);
+            min-height: 20px;
         }
     }
     

@@ -1,6 +1,17 @@
 <template>
   <div id="app">
     <div class="container">
+
+      <div class="wrap-search">
+        
+          <Search 
+         
+          />
+        
+      </div>
+      
+      
+
       <div class="row">
 
         <Disc
@@ -18,11 +29,13 @@
 
 import axios from 'axios';
 import Disc from '@/components/Disc.vue';
+import Search from '@/components/Search.vue';
 
 export default {
   name: "App",
   components: {
     Disc,
+    Search,
     
   },
   data(){
@@ -56,8 +69,14 @@ export default {
 
 #app{
   background-color: rgb(30, 45, 59);
-  height: 100%;
-  
+  min-height: 100vh;
+}
+
+.container .wrap-search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
